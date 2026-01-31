@@ -48,6 +48,7 @@
 # contact = input("Enter your contact number: ")
 
 # print("Your contact number" + contact)
+# print(f"Your contact number is {contact}.")
 
 
 # name = input("Enter your name: ")
@@ -65,7 +66,7 @@
 # weight1 = int(input("Enter first weight: "))
 # weight2 = int(input("Enter second weight: "))
 
-# total = (weight1) + weight2
+# total = weight1 + weight2
 # print(total)
 
 
@@ -110,7 +111,7 @@
 # print(num1//num2)
 # print(num1%num2)
 
-print(3 ** 2)
-print(4 ** 2)
-print(5 ** 4)
+# print(3 ** 2)
+# print(4 ** 2)
+# print(5 ** 4)
 

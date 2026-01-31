@@ -1,13 +1,6 @@
-contacts = {
-    "Ram": {"phone": "9860841089",  "email": "ram@gmail.com"},
-    "Shyam": {"phone": "9808416776", "email": "shyam@gmail.com"}
-}
 
 
-# contacts["Hari"] = {"phone": "9845407271", "email":"hari@gmail.com"}
-# print(contacts)
-
-#Show Menu
+contacts ={}
 
 def show_menu():
     print("\n========== CONTACT BOOK ==========")
@@ -36,38 +29,57 @@ def add_contact():
         print(f"{name} added successfully.")
 
 
-    # contacts[name] = {"phone": phone, "email": email}
-    # print(contacts)
-add_contact()
-
-
-
+# View Contacts
 def view_contact():
     if not contacts:
-        print("No contacts found.")
+       print("Contacts not found.")
 
-    else:
-        for name, info in contacts.items():
-            print(f"Name: {name}, Phone: {info['phone']}, Email: {info['email']}")
-
-
-view_contact()
+    else: 
+       for name, info in contacts.items():
+           print(f"Name: {name}, Phone: {info['phone']}, Email: {info['email']}")
 
 
+# Search Contact
 def search_contact():
-    pass
+    name = input("Enter a name: ")
 
-search_contact()
+    if name in contacts:
+        info  = contacts[name]
+        print(f"Name: {name}, Phone: {info['phone']}, Email: {info['email']}")
+    
+    else: print(f"{name} not found.")
+
 
 
 def update_contact():
-    pass
-update_contact()
+    name = input("Enter a name to update: ")
+
+    if name in contacts:
+        phone = input("Enter phone number(Leave empty for not changing.): ")
+        email = input("Enter email(Leave empty for not changing): ")
+
+        if phone:
+            contacts[name]["phone"] = phone
+        if email:
+            contacts[name]["email"] = email
+
+
+        print(f"{name}'s contact updated.")
+
+    else:
+        print(f"{name} not found.")
+
 
 
 def delete_contact():
-    pass
-delete_contact()
+    name = input("Enter a name to delete: ")
+
+    if name in contacts:
+        del contacts[name]
+        print(f"{name} deleted successfully. ")
+
+    else:
+        print(f"{name} not found.")
 
 
 while True:

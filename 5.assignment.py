@@ -68,8 +68,8 @@
 
 
 
-x = 5 
-y = 10
-print(x > 3 and y > 4)
-print(x <3 or y > 5)
-print(not(x > 3))
+# x = 5 
+# y = 10
+# print(x > 3 and y > 4)
+# print(x <3 or y > 5)
+# print(not(x > 3))

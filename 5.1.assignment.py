@@ -48,6 +48,8 @@
 # age = 20
 # has_licence = True
 
+# age = int(input("Enter your age: "))
+# has_licence = True
 
 # if age >=18:
 #     if has_licence == True:
@@ -167,15 +169,15 @@
 
 
 
-for i in range(10):
+# for i in range(10):
 
-    if i == 5:
-        break
-    print(i)    
+#     if i == 5:
+#         break
+#     print(i)    
 
 
 
-for i in range(10):
-    print(i)
-    if i == 5:
-        break
+# for i in range(10):
+#     print(i)
+#     if i == 5:
+#         break

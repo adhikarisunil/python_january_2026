@@ -79,10 +79,10 @@
 
 
 
-number = [1,2,3,4,5,5,6,7]
+# number = [1,2,3,4,5,5,6,7]
 
-index = number.index(5)
-number.reverse()
+# index = number.index(5)
+# number.reverse()
 
-print(number)
-print(index)
+# print(number)
+# print(index)
