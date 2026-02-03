@@ -64,10 +64,32 @@
 
 
 
-def numbers(*nums):
-    total = 0
-    for num in nums:
-        total += num
+# def numbers(*nums):
+#     total = 0
+#     for num in nums:
+#         total += num
 
-    return total
-print(numbers(1,2,3,4,5,6))
+#     return total
+# print(numbers(1,2,3,4,5,6))
+
+
+
+
+
+def show_info(**info):
+    for key, val in info.items():
+        print(f"{key}: {val}")
+
+
+show_info(name = "Ram", age = 34, location = "Kathmandu")
+
+
+
+
+
+def student(**info):
+    for key, val in info.items():
+        print(f"{key}: {val}")
+
+
+student(name = "Ram", age = 34, location = "Kathmandu")
