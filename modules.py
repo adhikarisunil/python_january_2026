@@ -26,5 +26,10 @@
 import os
 
 
-print(os.getcwd())
-print(os.listdir())
+# print(os.getcwd())
+# print(os.listdir())
+# os.mkdir("Ram")
+# os.rmdir("Ram")
+print(os.path.exists("hello.py"))
+print(os.path.exists("ram123.py"))
+
